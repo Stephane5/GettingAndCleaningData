@@ -38,28 +38,3 @@ Aggregate the date by getting the mean of each feature for each activity and sub
 ### 6. Write tidy_data to file
 
 Write the resulting tidy data into a tidy_data.txt file
-
-
-
-## Code book
-
-subject.ID: each of the 30 participants in the experiments are identified by this id
-
-activity: activity label (among the following values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-
-Measurements (signals). Rather than giving an explanation for each single measurement, it makes more sense to explain the naming convention:
-- Starts with t or f:
-	- t indicates the time domain signals
-	- f indicates the frequency domain signals (Fast Fourier Transform applied to the t signals)
-- Ends with mean(), std(), mean()-X, mean()-Y, mean()-Z, std()-X, std()-Y, std()-Z: respectively the mean and standard deviation of a measurement, and the mean and standard deviation of a measurement across the three axes
-- Contains Acc or Gyro
-	- Acc indicates that the measurement was made using the accelerometer
-	- Gyro indicates that the measurement was made using the gyroscope
-- Contains Mag: indicates it measures the magnitude (euclidian norm)
-- The list of recorded signals are:
-	- BodyAcc: body acceleration
-	- GravityAcc: gravity acceleration
-	- BodyAccJerk: body acceleration jerk
-	- BodyGyro: angular velocity
-	- BodyGyroJerk: angular velocity jerk
-
